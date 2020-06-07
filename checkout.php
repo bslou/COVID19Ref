@@ -380,27 +380,27 @@ function googleTranslateElementInit() {
 </div>
 <div style = "width: 800px; border: none;" id = "canada">
 <h1 class = "kj">Canada</h1>
-<p class = "ox"></p>
+<p class = "ox">Canada is somewhat controlling the speed of the spread of COVID 19 in its country. Canadas highest day of most new cases was on May 3, 2020 where Canada had gotten a total of 2760 new COVID 19 cases. Throughout April and the beginning of May, Canada averaged about 1800 cases per day, while now (June) they average about 690. Canadas death cases are also pretty controlled, as their average is way less than it was before. On the other hand, Canadas worst death day happend on May 31, 2020 where 222 people died from COVID 19. Canadas recovery to death ratio is about 53:7. They have a total of 7.7K deaths while there are 53K recoveries.</p>
 <br>
 </div>
 <div style = "width: 800px; border: none;" id = "pakistan">
 <h1 class = "kj">Pakistan</h1>
-<p class = "ox"></p>
+<p class = "ox">Pakistan is not looking too good in terms of COVID 19 new cases. In fact all of their new highest cases are happening right now where they average about 4800 cases per day. Throughout April and May Pakistan averaged about 1000 cases per day. Pakistans recovery to death ratio is 31:1.8. They have 31K recoveries and 1.8K deaths.</p>
 <br>
 </div>
 <div style = "width: 800px; border: none;" id = "china">
 <h1 class = "kj">China</h1>
-<p class = "ox"></p>
+<p class = "ox">Not much is known about Chinas COVID 19 situation. Chinas recovery to death ratio is about 78:4.6. They have a total of 78K recoveries in the country due to COVID 19 and 4.6K deaths. COVID 19 started in the city of Wuhan in China. China has a total of 83K cases in the country, and it stood at around 83K for a few months.</p>
 <br>
 </div>
 <div style = "width: 800px; border: none;" id = "qatar">
 <h1 class = "kj">Qatar</h1>
-<p class = "ox"></p>
+<p class = "ox">Qatars is not fully controlling COVID 19 right now. The cases for Qatar are increasing. Their highest COVID 19 case day happened on May 30, 2020 when they had a total of 2355 new cases. Qatar used to have an average of 600 cases in April and the beginning of May, but now the cases jumped up to an average of 2000 new cases daily. Their death to recovery ratio is 205:2. It seems almost unbelievable how Qatar has about 65K cases and only 49 people died from the virus. This may be because Qatar has more of a younger than an older population.</p>
 <br>
 </div>
 <div style = "width: 800px; border: none;" id = "bangladesh">
 <h1 class = "kj">Bangladesh</h1>
-<p class = "ox"></p>
+<p class = "ox">Bangladesh is not fully controlling COVID 19 either. Their average amount of new cases throughout April was about 680, while right now they average about 2380. Bangladesh has a recovery to death ratio of 65:4. They have a total of 811 deaths and 13K recoveries. The amount of cases they have is about 60K. The day when Bangladesh had the most cases was on June 2, 2020 when they had 2911 cases in one day.</p>
 <br>
 </div>
 </center>
