@@ -322,6 +322,64 @@ ul {
   display: table;
   margin: 0 auto;
 }
+.modal2 {
+    display:none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    }
+
+    /* Modal Content Box */
+    .modal-content2 {
+    background-color: #fefefe;
+    margin: 4% auto 15% auto;
+    border: 1px solid #888;
+    width: 40%;
+    padding-bottom: 30px;
+    }
+
+    /* The Close Button (x) */
+    .close2 {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+    }
+    .close2:hover,.close2:focus {
+    color: red;
+    cursor: pointer;
+    }
+
+    /* Add Zoom Animation */
+    .animate2 {
+    animation: zoom 0.6s
+    }
+    .imgcontainer2 {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+    }
+    .avatar2 {
+    width: 200px;
+    height:200px;
+    border-radius: 50%;
+    }
+    .mako{
+     resize:vertical;
+     width: 90%;
+     font-size: 16pt;
+     height: 200px;
+    }
+    .mako:focus{
+      outline-color: orange;
+    }
 </style>
 
 </head>
@@ -349,6 +407,7 @@ ul {
 <a href = "#treat" class = "ol left">Treatments</a>
 <a href = "#forum" class = "ol left">Forum</a>
 <a href = "checkout.php" class = "ol left">Individual country stats</a>
+<a href = "#" class = "ol left" onclick = "document.getElementById('modal-wrapper3').style.display='block'">Contact Us</a>
 <a href = "fundraise.php" class = "ol left">Help Fundraise</a>
 <div id="google_translate_element" style = "float: left; margin-left: 10px; margin-top: 4px;"></div>
 
@@ -546,7 +605,7 @@ function drawChart() {
     <center>
     <table>
     <tr class = "shade"><th style = "width: 6%;">#</th><th>Country</th><th>Recovered</th><th>Dead</th><th>Confirmed Cases</th></tr>
-    <tr><td>1</td><td><a href = "checkout.php" class = "ol" Title = "Location to world coronavirus stats over months">USA</a></td><td>712K</td><td>110K</td><td>1.93M</td></tr><tr class = "shade"><td>2</td><td><a href = "checkout.php" class = "ol" Title = "Location to world coronavirus stats over months">Brazil</a></td><td>289K</td><td>34K</td><td>615K</td></tr><tr><td>3</td><td><a href = "checkout.php" class = "ol" Title = "Location to world coronavirus stats over months">Russia</a></td><td>213K</td><td>5K</td><td>450K</td></tr><tr class = "shade"><td>4</td><td><a href = "checkout.php" class = "ol" Title = "Location to world coronavirus stats over months">Spain</a></td><td>N/A</td><td>27K</td><td>288K</td></tr><tr><td>5</td><td><a href = "checkout.php" class = "ol" Title = "Location to world coronavirus stats over months">UK</a></td><td>N/A</td><td>40K</td><td>283K</td></tr><tr class = "shade"><td>6</td><td><a href = "checkout.php" class = "ol" Title = "Location to world coronavirus stats over months">India</a></td><td>113K</td><td>6K</td><td>236K</td></tr><tr><td>7</td><td><a href = "checkout.php" class = "ol" Title = "Location to world coronavirus stats over months">Italy</a></td><td>164K</td><td>34K</td><td>235K</td></tr><tr class = "shade"><td>8</td><td><a href = "checkout.php" class = "ol" Title = "Location to world coronavirus stats over months">Germany</a></td><td>169K</td><td>8.7K</td><td>185K</td></tr><tr><td>9</td><td><a href = "checkout.php" class = "ol" Title = "Location to world coronavirus stats over months">Peru</a></td><td>76K</td><td>5K</td><td>183K</td></tr><tr class = "shade"><td>10</td><td><a href = "checkout.php" class = "ol" Title = "Location to world coronavirus stats over months">Turkey</a></td><td>133K</td><td>4K</td><td>168K</td></tr><tr><td>11</td><td><a href = "checkout.php" class = "ol" Title = "Location to world coronavirus stats over months">Iran</a></td><td>129K</td><td>8K</td><td>167K</td></tr><tr class = "shade"><td>12</td><td><a href = "checkout.php" class = "ol" Title = "Location to world coronavirus stats over months">France</a></td><td>70K</td><td>29K</td><td>153K</td></tr><tr><td>13</td><td><a href = "checkout.php" class = "ol" Title = "Location to world coronavirus stats over months">Chile</a></td><td>95K</td><td>1K</td><td>122K</td></tr><tr class = "shade"><td>14</td><td><a href = "checkout.php" class = "ol" Title = "Location to world coronavirus stats over months">Mexico</a></td><td>75K</td><td>12K</td><td>105K</td></tr><tr><td>15</td><td><a href = "checkout.php" class = "ol" Title = "Location to world coronavirus stats over months">Saudi Arabia</a></td><td>71K</td><td>642</td><td>96K</td></tr><tr class = "shade"><td>16</td><td><a href = "checkout.php" class = "ol" Title = "Location to world coronavirus stats over months">Canada</a></td><td>53K</td><td>7.7K</td><td>94K</td></tr><tr><td>17</td><td><a href = "checkout.php" class = "ol" Title = "Location to world coronavirus stats over months">Pakistan</a></td><td>31K</td><td>1.8K</td><td>89K</td></tr><tr class = "shade"><td>18</td><td><a href = "checkout.php" class = "ol" Title = "Location to world coronavirus stats over months">China</a></td><td>78K</td><td>4.6K</td><td>83K</td></tr><tr><td>19</td><td><a href = "checkout.php" class = "ol" Title = "Location to world coronavirus stats over months">Qatar</a></td><td>41K</td><td>49</td><td>65K</td></tr><tr class = "shade"><td>20</td><td><a href = "checkout.php" class = "ol" Title = "Location to world coronavirus stats over months">Bangladesh</a></td><td>13K</td><td>811</td><td>60K</td></tr>
+    <tr><td>1</td><td><a href = "checkout.php#usa" class = "ol" Title = "Location to world coronavirus stats over months">USA</a></td><td>712K</td><td>110K</td><td>1.93M</td></tr><tr class = "shade"><td>2</td><td><a href = "checkout.php#brazil" class = "ol" Title = "Location to world coronavirus stats over months">Brazil</a></td><td>289K</td><td>34K</td><td>615K</td></tr><tr><td>3</td><td><a href = "checkout.php#russia" class = "ol" Title = "Location to world coronavirus stats over months">Russia</a></td><td>213K</td><td>5K</td><td>450K</td></tr><tr class = "shade"><td>4</td><td><a href = "checkout.php#spain" class = "ol" Title = "Location to world coronavirus stats over months">Spain</a></td><td>N/A</td><td>27K</td><td>288K</td></tr><tr><td>5</td><td><a href = "checkout.php#uk" class = "ol" Title = "Location to world coronavirus stats over months">UK</a></td><td>N/A</td><td>40K</td><td>283K</td></tr><tr class = "shade"><td>6</td><td><a href = "checkout.php#india" class = "ol" Title = "Location to world coronavirus stats over months">India</a></td><td>113K</td><td>6K</td><td>236K</td></tr><tr><td>7</td><td><a href = "checkout.php#italy" class = "ol" Title = "Location to world coronavirus stats over months">Italy</a></td><td>164K</td><td>34K</td><td>235K</td></tr><tr class = "shade"><td>8</td><td><a href = "checkout.php#germany" class = "ol" Title = "Location to world coronavirus stats over months">Germany</a></td><td>169K</td><td>8.7K</td><td>185K</td></tr><tr><td>9</td><td><a href = "checkout.php#peru" class = "ol" Title = "Location to world coronavirus stats over months">Peru</a></td><td>76K</td><td>5K</td><td>183K</td></tr><tr class = "shade"><td>10</td><td><a href = "checkout.php#turkey" class = "ol" Title = "Location to world coronavirus stats over months">Turkey</a></td><td>133K</td><td>4K</td><td>168K</td></tr><tr><td>11</td><td><a href = "checkout.php#iran" class = "ol" Title = "Location to world coronavirus stats over months">Iran</a></td><td>129K</td><td>8K</td><td>167K</td></tr><tr class = "shade"><td>12</td><td><a href = "checkout.php#france" class = "ol" Title = "Location to world coronavirus stats over months">France</a></td><td>70K</td><td>29K</td><td>153K</td></tr><tr><td>13</td><td><a href = "checkout.php#chile" class = "ol" Title = "Location to world coronavirus stats over months">Chile</a></td><td>95K</td><td>1K</td><td>122K</td></tr><tr class = "shade"><td>14</td><td><a href = "checkout.php#mexico" class = "ol" Title = "Location to world coronavirus stats over months">Mexico</a></td><td>75K</td><td>12K</td><td>105K</td></tr><tr><td>15</td><td><a href = "checkout.php#saudi" class = "ol" Title = "Location to world coronavirus stats over months">Saudi Arabia</a></td><td>71K</td><td>642</td><td>96K</td></tr><tr class = "shade"><td>16</td><td><a href = "checkout.php#canada" class = "ol" Title = "Location to world coronavirus stats over months">Canada</a></td><td>53K</td><td>7.7K</td><td>94K</td></tr><tr><td>17</td><td><a href = "checkout.php#pakistan" class = "ol" Title = "Location to world coronavirus stats over months">Pakistan</a></td><td>31K</td><td>1.8K</td><td>89K</td></tr><tr class = "shade"><td>18</td><td><a href = "checkout.php#china" class = "ol" Title = "Location to world coronavirus stats over months">China</a></td><td>78K</td><td>4.6K</td><td>83K</td></tr><tr><td>19</td><td><a href = "checkout.php#qatar" class = "ol" Title = "Location to world coronavirus stats over months">Qatar</a></td><td>41K</td><td>49</td><td>65K</td></tr><tr class = "shade"><td>20</td><td><a href = "checkout.php#bangladesh" class = "ol" Title = "Location to world coronavirus stats over months">Bangladesh</a></td><td>13K</td><td>811</td><td>60K</td></tr>
     </table>
   
     </center>
@@ -706,14 +765,52 @@ frameborder="0" style="border:0" allowfullscreen id = "map"></iframe></div>--><b
     
 
     </div>
-    
-    
+    <div id="modal-wrapper3" class="modal2">
 
+<form class="modal-content2 animate2" action = "index.php" onsubmit = "return checkforblankTh();">
+
+<div class = "imgcontainer2">
+<span onclick="document.getElementById('modal-wrapper3').style.display='none'" class="close2" title="Close PopUp">&times;</span>
+<h1 style="text-align:center">Contact Us</h1>
+</div>
+<center><p id = "error3" style = "color: red; width: 300px; background-color: #F9E1E1; border-radius: 10px 10px 10px 10px;"></p></center>
+<div class="container2">
+<center><textarea placeholder = "Send your concern..." id = "concern" class = "mako" autocomplete= "false" style = "padding: 10px;"></textarea></center>
+<button class = "ok" type="submit">Send</button>
+</div>
+
+</form>
+
+</div>
+    
+<script>
+function checkforblankTh(){
+  var errormessageTh = "";
+  if (document.getElementById("concern").value == ""){
+    document.getElementById("concern").style.border = "1px solid red";
+    errormessageTh += "No problem asked..."
+  }else if(document.getElementById("concern").value.length < 20){
+    document.getElementById("concern").style.border = "1px solid red";
+    errormessageTh += "Must be at least 20 characters..."
+  }else{
+    document.getElementById("concern").style.borderColor = "lightgray";
+  }
+  if (errormessageTh != ""){
+    document.getElementById("error3").innerHTML = errormessageTh;
+    document.getElementById("error3").style.border = "1px solid red";
+    return false;
+  }else{
+    alert("Message sent successfully!")
+  }
+}
+
+
+</script>
 <div class="cookie-container">
       <p style = "float: left; margin-top: 6px;">
         We use cookies in this website to give you the best experience on our
         site and show you relevant ads.<br> To find out more, read our
-        <a href="#"><u>privacy policy</u></a> and <a href="#"><u>cookie policy</u></a>. If you have any other questions feel free to <a href = "#"><u>contact us</u></a>.
+        <a href="privacy.php"><u>privacy policy</u></a> and <a href="cookies.php"><u>cookie policy</u></a>. If you have any other questions feel free to <a href = "#" onclick = "document.getElementById('modal-wrapper3').style.display='block'"><u>contact us</u></a>.
         <br>
       </p>
 
