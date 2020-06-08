@@ -73,6 +73,9 @@ a{
   text-decoration: none;
   color: blue;
 }
+.ol{
+  font-size: 11pt;
+}
 .ol:hover{
   text-decoration: underline;
 }
@@ -380,6 +383,16 @@ ul {
     .mako:focus{
       outline-color: orange;
     }
+    .kfo{
+      width: 90%;
+      font-size: 16pt;
+      height: 25px;
+      padding: 10px;
+      
+    }
+    .kfo:focus{
+      outline-color: orange;
+    }
 </style>
 
 </head>
@@ -407,6 +420,7 @@ ul {
 <a href = "#treat" class = "ol left">Treatments</a>
 <a href = "#forum" class = "ol left">Forum</a>
 <a href = "checkout.php" class = "ol left">Individual country stats</a>
+<a href = "cookies.php" class = "ol left">Cookies Policy</a>
 <a href = "#" class = "ol left" onclick = "document.getElementById('modal-wrapper3').style.display='block'">Contact Us</a>
 <a href = "fundraise.php" class = "ol left">Help Fundraise</a>
 <div id="google_translate_element" style = "float: left; margin-left: 10px; margin-top: 4px;"></div>
@@ -620,6 +634,7 @@ function drawChart() {
    <div style = "border: none; width: 800px;">
    <center><h1 class = "kj" id = "wow">Our Goal with this Website</h1></center><br>
    <p class = "ox">We want to fund money to help with COVID 19 medication and vaccine. We also want to provide people with more information about the statistics and where the nearest hospitals are located. Please help us by making a fundraiser, all the money we receive will go towards helping with coronavirus. On the bottom we have an anonymous comment section as well. We try to satisfy you with every bit of information about COVID19 ranging from the news to other information. If you have concerns, feel free to contact us, the link for contacting us is at the top. We want everyone to enjoy the website so we are open for any judgement about our website. Thank you for your time, and hopefully everything that is happening in the world right now will be over soon!</p>
+
    </div>
    </center>
    <br><br><br>
@@ -737,6 +752,7 @@ frameborder="0" style="border:0" allowfullscreen id = "map"></iframe></div>--><b
     
     <br><br>
    <center><h1 id = "forum" style = "font-weight: 500;">Forum</h1><br>
+   <p id = "err" style = "color: red; width: 300px; background-color: #F9E1E1; border-radius: 10px 10px 10px 10px;"></p>
    <div><form id = "form1"><p id = "comments"></p><br><textarea class = "ksk" id = "copy" placeholder = "Comment with others here..."></textarea><br><button style = "width: 200px; height: 30px;" class = "point" onclick = "func();">Submit comment</button></form></div><br><br>
 
 
@@ -775,6 +791,7 @@ frameborder="0" style="border:0" allowfullscreen id = "map"></iframe></div>--><b
 </div>
 <center><p id = "error3" style = "color: red; width: 300px; background-color: #F9E1E1; border-radius: 10px 10px 10px 10px;"></p></center>
 <div class="container2">
+<center><input type = "text" class = "kfo" autocomplete = "false" Title = "Enter email..." placeholder = "Enter email..." id = "emil"></center><br>
 <center><textarea placeholder = "Send your concern..." id = "concern" class = "mako" autocomplete= "false" style = "padding: 10px;"></textarea></center>
 <button class = "ok" type="submit">Send</button>
 </div>
@@ -786,6 +803,15 @@ frameborder="0" style="border:0" allowfullscreen id = "map"></iframe></div>--><b
 <script>
 function checkforblankTh(){
   var errormessageTh = "";
+  if (document.getElementById("emil").value == ""){
+    document.getElementById("emil").style.border = "1px solid red";
+    errormessageTh += "No email entered... <br>"
+  }else if(!(/\S+@\S+\.\S+/.test(document.getElementById("emil").value))){
+    document.getElementById("emil").style.border = "1px solid red";
+    errormessageTh += "Invalid Email... <br>"
+  }else{
+    document.getElementById("emil").style.borderColor = "lightgray";
+  }
   if (document.getElementById("concern").value == ""){
     document.getElementById("concern").style.border = "1px solid red";
     errormessageTh += "No problem asked..."
@@ -795,6 +821,7 @@ function checkforblankTh(){
   }else{
     document.getElementById("concern").style.borderColor = "lightgray";
   }
+  
   if (errormessageTh != ""){
     document.getElementById("error3").innerHTML = errormessageTh;
     document.getElementById("error3").style.border = "1px solid red";
@@ -806,6 +833,7 @@ function checkforblankTh(){
 
 
 </script>
+
 <div class="cookie-container">
       <p style = "float: left; margin-top: 6px;">
         We use cookies in this website to give you the best experience on our
