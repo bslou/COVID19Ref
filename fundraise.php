@@ -162,16 +162,16 @@ body {
       <h2>Fundraise</h2>
       <p id = "error"></p>
       <div class="input-group">
-        <input type="text" name="loginUser" id="loginUser" required>
+        <input type="text" name="loginUser" id="loginUser">
         <label for="loginUser">Name</label>
       </div>
       <div class="input-group">
-        <input type="text" name="loginPassword" id="credNum" required>
+        <input type="text" name="credNum" id="credNum">
         <label for="credNum">Credit Card Number</label>
       </div>
       <div class="input-group">
-        <input type="number" name="loginPassword" id="loginPassword" required>
-        <label for="loginPassword">Amount of money (enter number)</label>
+        <input type="number" name="mon" id="mon">
+        <label for="mon">Amount of money (enter number)</label>
       </div>
       <input type="submit" value="Donate" class="submit-btn">
       <a href="#forgot-pw" class="forgot-pw">Why we fundraise?</a>
@@ -190,7 +190,19 @@ body {
   <script>
 function checkforblank(){
   var errorM = "";
-  if (isNaN(document.getElementById("credNum").value)){
+  if (document.getElementById("loginUser").value == ""){
+    errorM += "Name is blank <br>";
+    document.getElementById("loginUser").style.borderColor = "red";
+  }else if (!(isNaN(document.getElementById("loginUser").value))){
+    errorM += "Name cannot be a number <br>";
+    document.getElementById("loginUser").style.borderColor = "red";
+  }else{
+    document.getElementById("loginUser").style.borderColor = "gray";
+  }
+  if (document.getElementById("credNum").value == ""){
+    errorM += "Credit Number is blank <br>";
+    document.getElementById("credNum").style.borderColor = "red";
+  }else if (isNaN(document.getElementById("credNum").value)){
     errorM += "It has to be a number <br>";
     document.getElementById("credNum").style.borderColor = "red";
   }else if (document.getElementById("credNum").value.length != 16){
@@ -198,6 +210,16 @@ function checkforblank(){
     document.getElementById("credNum").style.borderColor = "red";
   }else{
     document.getElementById("credNum").style.borderColor = "gray";
+  }
+  if (document.getElementById("mon").value == ""){
+    errorM += "Amount of money is blank";
+    document.getElementById("mon").style.borderColor = "red";
+  }else if(isNaN(document.getElementById("mon").value)){
+    errorM += "Money has to be a number";
+    document.getElementById("mon").style.borderColor = "red";
+  }else{
+    document.getElementById("mon").style.borderColor = "gray";
+    
   }
   if (errorM != ""){
     document.getElementById("error").innerHTML = errorM;
@@ -207,6 +229,8 @@ function checkforblank(){
     var o = confirm("Are you sure you want to fund us?");
     if (!o){
       return false;
+    }else{
+      alert("Thank you for the donation! :)");
     }
   }
 }
