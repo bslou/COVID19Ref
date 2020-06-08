@@ -150,16 +150,44 @@ body {
 .ol:focus{
   color: darkorange;
 }
+ .goog-logo-link {
+        display:none !important;
+      } 
+
+      .goog-te-gadget{
+        color: transparent !important;
+      }
+      .goog-te-banner-frame.skiptranslate {
+        display: none !important;
+        } 
+      body {
+        top: 0px !important; 
+      }
   
   
   </style>
 </head>
 <body>
+
+
   <div class="login-wrapper">
     <form action="index.php" class="form" onsubmit = "return checkforblank();">
       <img src="img/avatar.png" alt="">
+      
       <center><a href = "index.php" style = "font-size: 14pt; margin-top: 0px;" class = "ol" Title = "Go back to main page">🏠</a></center>
-      <h2>Fundraise</h2>
+      <h2 style = "margin: -3px;">Fundraise</h2>
+      <center>
+      <div id="google_translate_element" style = "margin-left: 70px;"></div>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
+}
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</center><br>
       <p id = "error"></p>
       <div class="input-group">
         <input type="text" name="loginUser" id="loginUser">
