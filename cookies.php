@@ -9,7 +9,7 @@
 
 <p>Last updated: June 08, 2020</p>
 
-<p>This Cookies Policy explains what Cookies are and how We use them. You should read this policy so You can understand what type of cookies We use, or the information We collect using Cookies and how that information is used. Our Cookies Policy is maintained by the <a href="https://www.privacypolicies.com/cookies-policy-generator/">Cookies Policy Generator</a>.</p>
+<p>This Cookies Policy explains what Cookies are and how We use them. You should read this policy so You can understand what type of cookies We use, or the information We collect using Cookies and how that information is used. Our Cookies Policy is maintained by the <a href="https://www.privacypolicies.com/cookies-policy-generator/" target = "_blank">Cookies Policy Generator</a>.</p>
 
 <p>Cookies do not typically contain any information that personally identifies a user, but personal information that we store about You may be linked to the information stored in and obtained from Cookies. For further information on how We use, store and keep your personal data secure, see our Privacy Policy.</p>
 
@@ -65,7 +65,7 @@
 <p>For any other web browser, please visit your web browser's official web pages.</p>
 
 <h2>More Information about Cookies</h2>
-<p>You can learn more about cookies in the <a href="https://www.privacypolicies.com/blog/cookies/">"What Are Cookies"</a> article.</p>
+<p>You can learn more about cookies in the <a href="https://www.privacypolicies.com/blog/cookies/" target = "_blank">"What Are Cookies"</a> article.</p>
 
 <h2>Contact Us</h2>
 <p>If you have any questions about this Cookies Policy, You can contact us:</p>
