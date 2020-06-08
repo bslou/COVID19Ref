@@ -71,7 +71,7 @@
 <p>If you have any questions about this Cookies Policy, You can contact us:</p>
 
 <ul>
-        <li>By email: <a href = "https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSMVJHKmBNSZkTVjbxZscfVrVZNNxmZRnXSNvkQDNwKVlqWDHNBTxxXRmfDQVCgfjdKKdpTm">harshiths2004@gmail.com</a> or <a href = "https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSMVJHKmBNSZkTVjbxZscfVrVZNNxmZRnXSNvkQDNwKVlqWDHNBTxxXRmfDQVCgfjdKKdpTm">ben.sloutsky@gmail.com</a></li>
+        <li>By email: <a href = "https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSMVJHKmBNSZkTVjbxZscfVrVZNNxmZRnXSNvkQDNwKVlqWDHNBTxxXRmfDQVCgfjdKKdpTm" target="_blank">harshiths2004@gmail.com</a> or <a href = "https://mail.google.com/mail/u/4/#inbox?compose=CllgCJNqKqtlFhHTnwMxXckmCfXQmtHsBZPmKSVSQSMNMgPnbHLjTFqrPrpQMKwQnRdGHQJKKPL" target="_blank">ben.sloutsky@gmail.com</a></li>
         
         </ul>
 
