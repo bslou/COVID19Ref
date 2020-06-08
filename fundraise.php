@@ -156,17 +156,18 @@ body {
 </head>
 <body>
   <div class="login-wrapper">
-    <form action="" class="form">
+    <form action="index.php" class="form" onsubmit = "return checkforblank();">
       <img src="img/avatar.png" alt="">
       <center><a href = "index.php" style = "font-size: 14pt; margin-top: 0px;" class = "ol" Title = "Go back to main page">🏠</a></center>
       <h2>Fundraise</h2>
+      <p id = "error"></p>
       <div class="input-group">
         <input type="text" name="loginUser" id="loginUser" required>
         <label for="loginUser">Name</label>
       </div>
       <div class="input-group">
-        <input type="text" name="loginPassword" id="loginPassword" required>
-        <label for="loginPassword">Credit Card Number</label>
+        <input type="text" name="loginPassword" id="credNum" required>
+        <label for="credNum">Credit Card Number</label>
       </div>
       <div class="input-group">
         <input type="number" name="loginPassword" id="loginPassword" required>
@@ -186,5 +187,29 @@ body {
       </form>
     </div>
   </div>
+  <script>
+function checkforblank(){
+  var errorM = "";
+  if (isNaN(document.getElementById("credNum").value)){
+    errorM += "It has to be a number <br>";
+    document.getElementById("credNum").style.borderColor = "red";
+  }else if (document.getElementById("credNum").value.length != 16){
+    errorM += "Credit card number must be 16 digits <br>";
+    document.getElementById("credNum").style.borderColor = "red";
+  }else{
+    document.getElementById("credNum").style.borderColor = "gray";
+  }
+  if (errorM != ""){
+    document.getElementById("error").innerHTML = errorM;
+    document.getElementById("error").style.border = "1px solid red";
+    return false;
+  }else{
+    var o = confirm("Are you sure you want to fund us?");
+    if (!o){
+      return false;
+    }
+  }
+}
+</script>
 </body>
 </html>
