@@ -62,6 +62,7 @@ body {
   padding-top: 102px;
   }
 .left{
+  font-size: 11pt;
   float: left;
   margin: 10px;
   }
@@ -73,9 +74,7 @@ a{
   text-decoration: none;
   color: blue;
 }
-.ol{
-  font-size: 11pt;
-}
+
 .ol:hover{
   text-decoration: underline;
 }
@@ -205,6 +204,8 @@ a{
             content: counter(rateme) '/5';
         }
       @media only screen and (max-width: 700px){
+
+        /*
         .ox{
           font-size: 8pt;
           width: 200px;
@@ -212,6 +213,7 @@ a{
           margin-left: 120px;
           float: left;
         }
+        
         .kj{
           font-size: 9pt;
           width: 200px;
@@ -219,11 +221,13 @@ a{
           margin-left: 120px;
           float: left;
         }
+        */
       }
       #map {
         height: 400px;  /* The height is 400 pixels */
         width: 60%;  /* The width is the width of the web page */
        }
+       body{overflow-x: hidden;}
        .ksk{
          font-size: 13pt;
          width: 700px; 
@@ -260,6 +264,10 @@ a{
           height: 150px;
           
         }
+        
+      }
+      @media only screen and (max-width: 900px){
+        body{overflow-x: auto;}
       }
       textarea{
         resize: vertical;
@@ -281,6 +289,14 @@ a{
 .cookie-container.active {
   bottom: 0;
 }
+.img-banner{
+        display: none;
+      }
+      @media only screen and (min-width: 1100px){
+        .img-banner{
+          display: inline;
+        }
+      }
 
 .cookie-container a {
   color: #f5f6fa;
@@ -320,7 +336,7 @@ td{
 .uo{
   text-decoration: underline;
 }
-body{overflow-x: hidden;}
+
 ul {
   display: table;
   margin: 0 auto;
@@ -422,7 +438,6 @@ ul {
 <a href = "checkout.php" class = "ol left">Individual country stats</a>
 <a href = "cookies.php" class = "ol left">Cookies Policy</a>
 <a href = "#" class = "ol left" onclick = "document.getElementById('modal-wrapper3').style.display='block'">Contact Us</a>
-<a href = "fundraise.php" class = "ol left">Help Fundraise</a>
 <div id="google_translate_element" style = "float: left; margin-left: 10px; margin-top: 4px;"></div>
 
 <script type="text/javascript">
@@ -441,14 +456,14 @@ function googleTranslateElementInit() {
 
 <br><br><br><br>
 <br>
-<center><a href = "fundraise.php" class = "ojk">Help Us Fundraise</a></center><br>
+
 
 
 
 <center>
                       
 <div style = "position: absolute;" id = "graphs">
-<div id="piechart"></div>
+<div id="piechart" class = "img-banner"></div>
 
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
@@ -523,8 +538,8 @@ function drawChart() {
   }
   </script>
   </div>        
-<div style = "float: right; margin-top: -250px; position: absolute; left: 69%;">
-<div id="dual_x_div" style="width: 500px; height: 400px;"></div>
+<div style = "float: right; margin-top: -250px; position: absolute; left: 69%;" class = "img-banner">
+<div id="dual_x_div" style="width: 500px; height: 400px;" ></div>
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
       google.charts.load('current', {'packages':['bar']});
@@ -751,9 +766,10 @@ frameborder="0" style="border:0" allowfullscreen id = "map"></iframe></div>--><b
     <br><br><br>
     
     <br><br>
-   <center><h1 id = "forum" style = "font-weight: 500;">Forum</h1><br>
+    <center>
+   <!--<center><h1 id = "forum" style = "font-weight: 500;">Forum</h1><br>
    <p id = "err" style = "color: red; width: 300px; background-color: #F9E1E1; border-radius: 10px 10px 10px 10px;"></p>
-   <div><form id = "form1"><p id = "comments"></p><br><textarea class = "ksk" id = "copy" placeholder = "Comment with others here..."></textarea><br><button style = "width: 200px; height: 30px;" class = "point" onclick = "func();">Submit comment</button></form></div><br><br>
+   <div><form id = "form1"><p id = "comments"></p><br><textarea class = "ksk" id = "copy" placeholder = "Comment with others here..."></textarea><br><button style = "width: 200px; height: 30px;" class = "point" onclick = "func();">Submit comment</button></form></div>--><div><h1 style = "font-weight: 500;" id = "forum">Popular Forums on COVID</h1><a href = ""></a></div><br><br>
 
 
    <script>
@@ -777,7 +793,7 @@ frameborder="0" style="border:0" allowfullscreen id = "map"></iframe></div>--><b
         <span class="star">&nbsp;</span>
     </div></form><br><br><br><div style = "background-color: white; width: 300px;">
     
-    <center><a href = "https://www.instagram.com/" class= "so" target="_blank"><img src = "https://i.pinimg.com/474x/3c/0b/76/3c0b7683f968df22dfb8a45028ef33df.jpg" class = "pic"></a><a href = "https://twitter.com/explore" class= "so" target="_blank"><img src = "https://static01.nyt.com/images/2014/08/10/magazine/10wmt/10wmt-superJumbo-v4.jpg?quality=90&auto=webp" class = "pic" style = "width: 70px;"></a><a href = "https://www.facebook.com/" class= "so" target="_blank"><img src = "https://uploads-ssl.webflow.com/58268638d015d89e449cb511/5db286ab55881e7a960fc7c4_facebookpublisher-p-500.jpeg" class = "pic" style = "width: 70px; margin-top: 15px;"></a></center></div> <hr><center><p style = "color: gray; font-size: 8pt;">© Created by Benjamin and Harshith 2020</p></center>
+    <center><a href = "https://www.instagram.com/" class= "so" target="_blank"><img src = "https://i.pinimg.com/474x/3c/0b/76/3c0b7683f968df22dfb8a45028ef33df.jpg" class = "pic"></a><a href = "https://twitter.com/explore" class= "so" target="_blank"><img src = "https://static01.nyt.com/images/2014/08/10/magazine/10wmt/10wmt-superJumbo-v4.jpg?quality=90&auto=webp" class = "pic" style = "width: 70px;"></a><a href = "https://www.facebook.com/" class= "so" target="_blank"><img src = "https://uploads-ssl.webflow.com/58268638d015d89e449cb511/5db286ab55881e7a960fc7c4_facebookpublisher-p-500.jpeg" class = "pic" style = "width: 70px; margin-top: 15px;"></a></center></div> <hr><center><p style = "color: gray; font-size: 8pt;">© Created by Benjamin Slou and Harshith Sur 2020</p></center>
     
 
     </div>
@@ -838,7 +854,7 @@ function checkforblankTh(){
       <p style = "float: left; margin-top: 6px;">
         We use cookies in this website to give you the best experience on our
         site and show you relevant ads.<br> To find out more, read our
-        <a href="privacy.php"><u>privacy policy</u></a> and <a href="cookies.php"><u>cookie policy</u></a>. If you have any other questions feel free to <a href = "#" onclick = "document.getElementById('modal-wrapper3').style.display='block'"><u>contact us</u></a>.
+        privacy policy and <a href="cookies.php"><u>cookie policy</u></a>. If you have any other questions feel free to <a href = "#" onclick = "document.getElementById('modal-wrapper3').style.display='block'"><u>contact us</u></a>.
         <br>
       </p>
 
