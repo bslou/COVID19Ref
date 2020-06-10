@@ -769,7 +769,7 @@ frameborder="0" style="border:0" allowfullscreen id = "map"></iframe></div>--><b
     <center>
    <!--<center><h1 id = "forum" style = "font-weight: 500;">Forum</h1><br>
    <p id = "err" style = "color: red; width: 300px; background-color: #F9E1E1; border-radius: 10px 10px 10px 10px;"></p>
-   <div><form id = "form1"><p id = "comments"></p><br><textarea class = "ksk" id = "copy" placeholder = "Comment with others here..."></textarea><br><button style = "width: 200px; height: 30px;" class = "point" onclick = "func();">Submit comment</button></form></div>--><div><h1 style = "font-weight: 500;" id = "forum">Popular Forums on COVID</h1><a href = ""></a></div><br><br>
+   <div><form id = "form1"><p id = "comments"></p><br><textarea class = "ksk" id = "copy" placeholder = "Comment with others here..."></textarea><br><button style = "width: 200px; height: 30px;" class = "point" onclick = "func();">Submit comment</button></form></div>--><div><h1 style = "font-weight: 500;" id = "forum">Popular Forums on COVID</h1><br><a href = "https://www.reddit.com/r/COVID19/" class = "ol">Reddit COVID-19 Forum</a><br><a href = "https://www.hsph.harvard.edu/coronavirus/covid-19-news-and-resources/covid-19-mental-health-forum-series/" class = "ol">Harvard on COVID-19 Forum</a><br><a href = "https://wsma.org/WSMA/Membership/Discussion_Forums/COVID_19_Forum.aspx" class = "ol">Washington on COVID-19 Forum</a></div><br><br>
 
 
    <script>
@@ -799,7 +799,7 @@ frameborder="0" style="border:0" allowfullscreen id = "map"></iframe></div>--><b
     </div>
     <div id="modal-wrapper3" class="modal2">
 
-<form class="modal-content2 animate2" action = "index.php" onsubmit = "return checkforblankTh();">
+<form class="modal-content2 animate2" action = "contact.php" onsubmit = "return checkforblankTh();" method = "post">
 
 <div class = "imgcontainer2">
 <span onclick="document.getElementById('modal-wrapper3').style.display='none'" class="close2" title="Close PopUp">&times;</span>
@@ -807,8 +807,8 @@ frameborder="0" style="border:0" allowfullscreen id = "map"></iframe></div>--><b
 </div>
 <center><p id = "error3" style = "color: red; width: 300px; background-color: #F9E1E1; border-radius: 10px 10px 10px 10px;"></p></center>
 <div class="container2">
-<center><input type = "text" class = "kfo" autocomplete = "false" Title = "Enter email..." placeholder = "Enter email..." id = "emil"></center><br>
-<center><textarea placeholder = "Send your concern..." id = "concern" class = "mako" autocomplete= "false" style = "padding: 10px;"></textarea></center>
+<center><input type = "text" class = "kfo" autocomplete = "false" Title = "Enter email..." placeholder = "Enter email..." id = "emil" name = "emil"></center><br>
+<center><textarea placeholder = "Send your concern..." id = "concern" class = "mako" autocomplete= "false" style = "padding: 10px;" name = "concern"></textarea></center>
 <button class = "ok" type="submit">Send</button>
 </div>
 
