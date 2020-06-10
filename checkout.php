@@ -21,27 +21,18 @@
       data.addColumn('number', 'Germany');
       data.addColumn('number', 'Peru');
       data.addColumn('number', 'Turkey');
-      data.addColumn('number', 'Iran');
-      data.addColumn('number', 'France');
-      data.addColumn('number', 'Chile');
-      data.addColumn('number', 'Mexico');
-      data.addColumn('number', 'Saudi Arabia');
-      data.addColumn('number', 'Canada');
-      data.addColumn('number', 'Pakistan');
-      data.addColumn('number', 'China');
-      data.addColumn('number', 'Qatar');
       data.addColumn('number', 'Bangladesh');
       
-
+//9/20
       data.addRows([
-        [1, 1, 4, 0, 0, 30000, 0, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
-        [2, 4, 0, 0, 0, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
-        [3, 24, 50, 2, 1, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
-        [4, 105, 95, 23, 20, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
-        [5,  30051, 2100, 1300, 31000, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
-        [6,  810000, 60000, 113085, 20000, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
-        [7,  700000, 587450, 282100, 17000, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
-        [8, 99000, 131000, 44500, 1200, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5]
+        [1, 1, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [2, 4, 0, 0, 0, 0, 0, 32, 0, 0, 0, 0],
+        [3, 24, 50, 2, 1, 0, 1, 432, 23, 0, 2, 0],
+        [4, 105, 95, 23, 20, 14, 5, 2800, 239, 10, 5, 0],
+        [5, 30051, 2100, 1300, 31000, 13000, 1953, 158100, 55800, 600, 13000, 0],
+        [6,  810000, 60000, 113085, 20000, 155000, 33000, 90000, 62000, 27600, 75000, 6900],
+        [7,  700000, 587450, 282100, 17000, 77500, 154070, 18600, 18100, 90000, 3100, 60000],
+        [8, 99000, 131000, 44500, 1200, 5000, 83737, 2250, 3600, 36000, 7470, 18000]
       ]);
 
       var options = {
@@ -76,32 +67,17 @@
       data.addColumn('number', 'Russia');
       data.addColumn('number', 'Spain');
       data.addColumn('number', 'UK');
-      data.addColumn('number', 'India');
-      data.addColumn('number', 'Italy');
-      data.addColumn('number', 'Germany');
-      data.addColumn('number', 'Peru');
-      data.addColumn('number', 'Turkey');
-      data.addColumn('number', 'Iran');
-      data.addColumn('number', 'France');
-      data.addColumn('number', 'Chile');
-      data.addColumn('number', 'Mexico');
-      data.addColumn('number', 'Saudi Arabia');
-      data.addColumn('number', 'Canada');
-      data.addColumn('number', 'Pakistan');
-      data.addColumn('number', 'China');
-      data.addColumn('number', 'Qatar');
-      data.addColumn('number', 'Bangladesh');
       
 
       data.addRows([
-        [1, 5, 0, 78, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
-        [2, 110, 0, 190, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
-        [3, 30051, 30, 2003, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
-        [4, 30051, 30, 2003, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
-        [5,  30051, 30, 2003, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
-        [6,  30051, 30, 2003, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
-        [7,  30051, 30, 2003, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
-        [8, 30051, 30, 2003, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5]
+        [1, 0, 0, 0, 0, 0],
+        [2, 0, 0, 0, 0, 0],
+        [3, 0, 0, 0, 0, 0],
+        [4, 1, 0, 0, 1, 4],
+        [5, 3100, 100, 0, 7000, 3100],
+        [6, 54750, 312, 800, 4100, 25260],
+        [7, 37200, 14000, 2300, 1000, 10500],
+        [8, 6525, 4000, 500, 700, 1200]
       ]);
 
       var options = {
@@ -136,32 +112,17 @@
       data.addColumn('number', 'Russia');
       data.addColumn('number', 'Spain');
       data.addColumn('number', 'UK');
-      data.addColumn('number', 'India');
-      data.addColumn('number', 'Italy');
-      data.addColumn('number', 'Germany');
-      data.addColumn('number', 'Peru');
-      data.addColumn('number', 'Turkey');
-      data.addColumn('number', 'Iran');
-      data.addColumn('number', 'France');
-      data.addColumn('number', 'Chile');
-      data.addColumn('number', 'Mexico');
-      data.addColumn('number', 'Saudi Arabia');
-      data.addColumn('number', 'Canada');
-      data.addColumn('number', 'Pakistan');
-      data.addColumn('number', 'China');
-      data.addColumn('number', 'Qatar');
-      data.addColumn('number', 'Bangladesh');
       
 
       data.addRows([
-        [1, 5, 0, 78, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
-        [2, 110, 0, 190, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
-        [3, 30051, 30, 2003, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
-        [4, 30051, 30, 2003, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
-        [5,  30051, 30, 2003, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
-        [6,  30051, 30, 2003, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
-        [7,  30051, 30, 2003, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
-        [8, 30051, 30, 2003, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5]
+        [1, 5, 0, 78, 5, 5],
+        [2, 110, 0, 190, 5, 5],
+        [3, 30051, 30, 2003, 5, 5],
+        [4, 30051, 30, 2003, 5, 5],
+        [5, 30051, 30, 2003, 5, 5],
+        [6, 30051, 30, 2003, 5, 5],
+        [7, 30051, 30, 2003, 5, 5],
+        [8, 30051, 30, 2003, 5, 5]
       ]);
 
       var options = {
@@ -187,7 +148,7 @@
 html{scroll-behavior: smooth;}
 .header {text-align: center;padding: 10px 16px;background: #D6D6D6;color: #f1f1f1;height: 30px;}
 .content {padding: 16px;}
-.sticky {position: fixed;top: 0;width: 100%;z-index: 1;}
+.sticky {position: fixed;top: 0;width: 100%;z-index: 1; margin-left: -10px;}
 .sticky + .content {padding-top: 102px;}
 .left{float: left;margin: 10px;}.right{float: right;margin: 5px;}
 a{
@@ -300,7 +261,7 @@ function googleTranslateElementInit() {
 <div id = "graphs">
 <center><div id="line_top_x"></div></center><br><br><br>
 <center><div id="line_x"></div></center><br><br><br>
-<center><div id="line_o"></div></center><br><br><br><br>
+<!--<center><div id="line_o"></div></center>--><br><br><br><br>
 </div>
 <center>
 <div style = "width: 800px; border: none;" id = "usa">
